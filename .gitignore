@@ -1,1 +1,5 @@
-node_modules
+# package dependencies
+node_modules/
+
+# generated code
+build/
