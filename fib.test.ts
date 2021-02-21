@@ -1,5 +1,11 @@
 import { fibNum } from './fib';
 
+test('should throw error if argument provided is negative', () => {
+    expect(() => {
+        fibNum(-1);
+    }).toThrow("Argument must be non-negative");
+});
+
 test('0th Fibonacci number is 0', () => {
     expect(fibNum(0)).toBe(0);
 });
